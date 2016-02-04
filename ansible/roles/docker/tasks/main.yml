@@ -1,0 +1,16 @@
+---
+- name: ensure docker group exists
+  group: name=docker state=present
+
+- name: ensure vagrant user is in docker group
+  user: name=vagrant groups=docker append=yes
+
+- name: add docker yum repo
+  copy: src=files/docker.repo dest=/etc/yum.repos.d/docker.repo
+        owner=root group=root mode=0644
+
+- name: ensure docker-engine is latest version
+  yum: name=docker-engine state=latest
+
+- name: ensure docker service is running
+  service: name=docker state=started

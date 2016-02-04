@@ -11,6 +11,6 @@ Vagrant.configure(VAGRANT_CONFIG_VERSION) do |config|
   end
   config.vm.network "forwarded_port", guest: 8888, host: 8888
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "ansible/roles/docker/main.yml"
+    ansible.playbook = "ansible/docker_host.yml"
   end
 end
