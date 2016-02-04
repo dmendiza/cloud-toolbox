@@ -34,8 +34,10 @@ Bento - Packer templates for all major OSes
 
 Configuration management writtent in Python
 
-- pip install ansible
+- `pip install ansible`
 
 ### Docker
 
 Containers!
+
+- https://docs.docker.com/
