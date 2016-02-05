@@ -32,7 +32,7 @@ Bento - Packer templates for all major OSes
 
 ### Ansible
 
-Configuration management writtent in Python
+Configuration management written in Python
 
 - `pip install ansible`
 
@@ -41,3 +41,5 @@ Configuration management writtent in Python
 Containers!
 
 - https://docs.docker.com/
+
+Buzz word count: 6
