@@ -32,7 +32,7 @@ Bento - Packer templates for all major OSes
 
 ### Ansible
 
-Configuration management writtent in Python
+Configuration management written in Python
 
 - `pip install ansible`
 
